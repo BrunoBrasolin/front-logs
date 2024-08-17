@@ -1,10 +1,11 @@
-@import "../../node_modules/ag-grid-community/styles/ag-grid.css";
-@import "../../node_modules/ag-grid-community/styles/ag-theme-alpine.css";
-
 .logs-content {
   .title {
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
+  }
+
+  ag-grid-angular {
+    height: 400px;
   }
 }
