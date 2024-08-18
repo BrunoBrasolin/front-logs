@@ -16,7 +16,9 @@
       "architect": {
         "build": {
           "builder": "@angular-architects/native-federation:build",
-          "options": {},
+          "options": {
+            "outputPath": "dist/front-logs"
+          },
           "configurations": {
             "production": {
               "target": "front-logs:esbuild:production"
@@ -122,6 +124,9 @@
           "options": {
             "port": 4203
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
