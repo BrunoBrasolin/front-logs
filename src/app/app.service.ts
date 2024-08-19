@@ -11,6 +11,6 @@ export class AppService {
   constructor(private _httpClient: HttpClient) { }
 
   getLogs(): Observable<LogsInterface[]> {
-    return this._httpClient.get<LogsInterface[]>("http://localhost:8080");
+    return this._httpClient.get<LogsInterface[]>("https://api.gamidas.dev.br/logs");
   }
 }
